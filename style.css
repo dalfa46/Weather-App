@@ -33,7 +33,7 @@ body {
     height: 60px;
     border-radius: 30px;
     flex: 1;
-    font-size: 18;
+    font-size: 20;
 }
 .search button {
     border: 0;
@@ -61,7 +61,8 @@ body {
 
 .weather h2 {
     font-size: 50px;
-    font-family: ;
+    font-family: 'poppins' sans-serif;
+
     font-weight: 400;
     margin-top: -10px;
 }
@@ -86,6 +87,7 @@ body {
     margin-right: 10px;
     margin-left: 35%;
     text-align: left;
+    padding: 0 40px;
 }
 .col img {
 width: 50px;
