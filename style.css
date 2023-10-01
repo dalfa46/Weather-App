@@ -8,8 +8,9 @@ body {
     background: #222;
 }
 .card {
-    width: 35%;
-    max-width: 470%;
+   /* width: 50%;*/
+    max-width: 31%;
+    max-height: fit-content;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
     margin: 100px auto 0;
@@ -86,7 +87,7 @@ body {
     display: flex;
    align-items: center;
     margin-right: 10px;
-    margin-left: 60px;
+    margin-left: 40px;
     padding: 0 40px;
 }
 .col img {
@@ -96,4 +97,15 @@ margin-right: 10px;
 .details .humidity .wind {
 font-size: 28px;
 margin-top: -6px;
+}
+.weather {
+    display: none;
+}
+.error {
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: none;
+
 }
