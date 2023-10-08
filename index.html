@@ -22,6 +22,9 @@
                 <div class="error">
                     <p>invalid city name</p>
             </div>
+             <div class="internet">
+                <p>connect to the internet to contiue</p>
+            </div>
 
             <div class="weather"><!---body of the weather-app-->
                 <img src="images/rain.png" class="weather-icon"><!---rain icon-->
@@ -64,6 +67,7 @@ const weatherIcon = document.querySelector(".weather-icon");
             if (response.status == 404) {
                 document.querySelector(".error").style.display = "block"
                 document.querySelector(".weather").style.display = "none"
+                 document.querySelector(".internet").style.display = "none"
             }
             else {
                 var data = await response.json();
@@ -96,8 +100,14 @@ const weatherIcon = document.querySelector(".weather-icon");
 
                document.querySelector(".weather").style.display = "block";  
                document.querySelector(".error").style.display = "none"
+                document.querySelector(".error").style.display ="none";
             }
-              
+
+              async function noConnection() {
+document.querySelector(".internet").style.display ="block";
+document.querySelector(".weather").style.display ="none";
+document.querySelector(".error").style.display ="none";
+            }
             }
  searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
